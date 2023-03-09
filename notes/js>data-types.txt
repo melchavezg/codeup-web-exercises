@@ -17,5 +17,11 @@ expressions are made up of operators, variables, and literals.
 % - helps w even or odd
 if a number is divisible by 2 evenly its even
 if a number is not divisible by 2 evenly it is odd
+= assigned
+== compares/ boolean expression
+=== compares strictly
+12=='12' true
+12==='12' false
+
 
 
