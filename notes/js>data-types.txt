@@ -1,4 +1,4 @@
--Primitive Types
+-Primitive Types (* interview ques)
 ex. 1
 if using "" the answer will come back as a "string" rather than just your answer.
 ex. var info = "this is a sentence"
@@ -22,6 +22,226 @@ if a number is not divisible by 2 evenly it is odd
 === compares strictly
 12=='12' true
 12==='12' false
+-Variables
+; place semicolon at the end of every line
+constants (const) is going to stay constant, not meant to be reassigned.
+it cannot be reassigned *
+++x immediate change
+x++ will change on the next time you ask for x
+-Stringify if you want to make a number a string use .toString ()
+-Strings
+return returns a new answer but not permanently
+
+substring use counting to grab a word out of the string.
+A number can be converted to a string with the toString or toFixed methods. toString simply converts the number to a string, while toFixed allows us to specify a decimal precision for the number.
+- Functions; code to be reusable keep our code organized. specificity, task based.
+alert('hello world');
+declare functions
+execute functions
+syntax
+parameters vs arguments- placeholders vs actual values
+code lives inside curly brackets , scope, block of code, this code is what will be executed
+defining a function doesn't mean its executed, we're simply setting it up.
+how to execute a function; call the name of the function we want to run
+ex. CREATE A FUNCTION THAT ALERTS A WELCOME MESSAGE
+
+/defining a function
+function handleWelcomeMessage(){
+//what do we want executed?
+alert('welcome to the website')
+}
+//execute the code
+handleWelcomeMessage(){
+
+}
+
+ex. CREATE A FUNCTION THAT ADDS 2 NUMBERS
+// define the function
+// add 2 numbers inside the function
+// create variables that hold 2 numbers
+
+function addTwoNumbs(){
+//return keyword
+// return an output from the function
+//lives at the end of the function block
+\exit at the block of code, once something is returned
+    return 2+6;
+ }
+console.log(addTwoNums(); // logging the results of addTwoNums being executed...to the console
+
+//parameters/arguements
+//create a function that accepts 2 numbers and returns the sum of those two numbers
+step 1. creat a function
+step 2. accepts 2 numbers
+step 3. add the 2 numbers
+step 4. return sum
+step 5. execute the function
+step 6. pass in actual values
+step 7. console.log our results
+
+function returnSum(numOne, Numtwo){ //parameters are just placeholders for potential values/data
+console.log("numOne", numOne)
+console.log("numTwo", numOne)
+return numOne + numTwo
+
+}
+//execute
+console.log(returnSum(numOne:13, numTwo:98);//arguments are actual values
+
+1. create a function
+2. accepts 3 numbers
+3. multiplies 3 numbers
+4. returns mult
+5. executes the function
+6. pass in actual values
+7. console.log results
+// this an example of a void function (meaning nothing gets returned / no output
+function multiply(numOne, numTwo, numThree){
+//3-4
+var result=numOne*numTwo*numThree
+//alert('my result is' + result);
+return result;
+}
+console.log(multiply(numOne:12, numTwo:3, numThree: 17);
+
+funtion increment(x) {
+return x + 1;
+
+}
+var four= increment (x:3);
+var six= increment(increment(increment (x:3)));
+
+console.log(four)// 4
+console.log('six', six); //6
+
+function increment (someNum) {
+return someNum + 1 // 19
+console.log('you will never see this');
+return someNum + 2;// this will never run
+
+}
+increment(someNum 18);
+
+var increment = function(x) {
+return x + 1;
+};
+var two = increment (x:1);
+
+
+//write a function that accepts the user input and alerts a welcome message with their name
+1. write a function
+2. function accepts 1 parameter(userName)
+3. alert ('welcome' + userName)
+4. prompt user for their name and store name in variable
+5. execute the function
+
+function sayHello(username){
+alert('welcome', + userName);
+
+}
+var nameInput=prompt("what/'s your name?");
+
+sayHello(nameInput);
+
+//write a function that accepts a string and convert it in to lower case
+1. write a function
+2. accept 1 parameter
+3. convert param -> lowercase
+4. return the result ( after lowercase)
+5. execute the function
+
+function toLowercase(param){
+console.log('param', param);
+var lowerCase= param.toLowerCase();
+return lowercase;
+
+}
+console.log(convertToLower("WELCOME TO CODEUP!!!"));
+convertToLower(convertToLower"and OVER AND OVER AGAIN");
+convertToLower("HeLLo WoRLD"));
+
+//GLOBAL SCOPE
+
+/declare a global variable
+var globalVar = "look, i'm Global");
+
+//define the sayHello function
+function sayHello() {
+//globalVar is accessible here since the sayHello function scope is a sub-scope of the global scope
+alert(globalvar);
+}
+
+sayHello();
+
+var globalVar= "Look, im Global':// declare a global variable
+
+function scopeExample (){
+var stawberry = "strawberry"; \//declare a local variable
+alert(localVar);//localVar is accessible here
+alert(globalvar);//globalvar is accessible here
+
+}
+function localScopeCheck();
+console.log("line 283;" + strawberry);
+}
+scopeExample();
+localScopeCheck(O);
+alert("line 207:" + strawberry); //localVar is not accessible her and this will produce an error
+
+
+-Conditionals
+var weather = 70;
+ //if (weather  50) {
+  //console.log('bring a sweater');
+  //} else if {
+    //console.log('bring sunnies');
+ //}
+
+ var weather = 70;
+ if (weather > 70){
+ console.log('bring sunnies')
+ } else if (weather > 50 && weather < 70) {
+ console.log(' bring a sweater')
+ } else if ('weather < 50'){
+ console.log('stay home')
+ } else {
+ console.log('magic number')
+ }
+
+
+ var pass = "theSecretPassword"
+ var userGuess = prompt( 'guess the pass')
+ if ( userGuess === pass ){
+ alert(' you are the winner!')
+} else {
+alert ( 'try again next time')
+}
+//else if expects a conditional statement , else does not
+//what if the user guesses correctly with case sensitivity , alert you are a winner
+
+- Ternary operators
+'use strict'
+
+var message;
+var success = confirm('is this successful')
+
+if (success) {
+message = "operation was successful";
+} else {
+message = "oops, something went wrong."
+}
+
+console.log('message: ', message);
+
+var message = (success) ? "operation was successful." : 'oops, something went wrong.';
+
+-Unit Test
+describe ('stringLength', function() {
+it(should be a function,function;
+})
+expect(typeof stringLength).toBe('function')
+it('should accept a string',function() {
+})
 
 
 
