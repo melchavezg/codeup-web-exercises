@@ -10,15 +10,16 @@
             // TODO: complete this method
             // hint: area = pi * radius^2
             //return; // TODO: return the proper value
+
             return Math.PI * Math.pow(circle.radius, 2)
 
-            //console.log(circle.area)
         },
 
         logInfo: function (doRounding) {
             // TODO: complete this method.
-            if (doRounding == true) {
-                console.log(Math.round(circle.getArea()));
+
+            if (doRounding) { //if is always looking for true
+                console.log("Area of a circle with radius: " + this.radius + " is : " + Math.round(this.getArea()));
             }
             // Otherwise, output the complete value
 

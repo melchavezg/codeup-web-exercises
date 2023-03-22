@@ -10,7 +10,7 @@ var brotherBear = 5*3
 var hercules = 1*3
 alert('In total you spent $' + (littleMermaid + brotherBear + hercules) + '!')
 
-prompt(' If you worked 10 hrs at Facebook with rate of $350hr, Google 6 hours for $400hr, and Amazon 4 hours for $380, how much would you make this week?');
+prompt(' If you worked 10 hrs at Facebook with rate of $350hr, Google 6 hours for $400hr, and Amazon 4 hours for $380hr, how much would you make this week?');
 var faceBook = 10*350
 var google = 6*400
 var amazon = 4*380
@@ -19,7 +19,8 @@ alert('You would make $' +  faceBook + google + amazon + ' this week!')
 prompt("If class is not full would you like to attend?")
 alert("Thank you for your response")
 
-prompt('Are you a member?')
+prompt('Purchasing 2 or more items will get you a product offer!')
+alert()
 
 
 
