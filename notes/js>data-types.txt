@@ -1,4 +1,13 @@
--Primitive Types (* interview ques)
+//-Functions: a function is made up of several parts including
+-keyword function
+-name of the function
+a set of parentheses that contain the input or a parameter of the function
+-the body inside the functions inside the curly braces
+-a return statement inside the body of the function
+Whatever expression follows the return keyword will be the output of the function,
+
+-parseInt:passes a value as a string and returns the first integer.
+//-Primitive Types (* interview ques)
 ex. 1
 if using "" the answer will come back as a "string" rather than just your answer.
 ex. var info = "this is a sentence"
@@ -242,6 +251,12 @@ it(should be a function,function;
 expect(typeof stringLength).toBe('function')
 it('should accept a string',function() {
 })
-
-
+-Objects
+var waterBottle = {
+size : "8 oz",
+color : "clear",
+material : "plastic",
+empty : "false",
+}
+console.log("My waterbottle is" +  waterBottle.color);
 
