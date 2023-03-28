@@ -8,8 +8,8 @@
      * Example
      * > sayHello("codeup") // returns "Hello, codeup!"
      */
-    function sayHello(personName) {
-        return "hello " + personName;
+    function sayHello(x) {
+        return 'Hello'  + x;
     }
     console.log(sayHello("mel"));
     console.log(sayHello("carlos"));
@@ -24,7 +24,7 @@
      *
      * console.log 'helloMessage' to check your work
      */
-    var helloMessage = sayHello("codeup");
+    var helloMessage = sayHello("Melissa");
     console.log(helloMessage);
 
     /**
