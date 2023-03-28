@@ -19,8 +19,8 @@ alert('You would make $' +  faceBook + google + amazon + ' this week!')
 prompt("If class is not full would you like to attend?")
 alert("Thank you for your response")
 
-prompt('Purchasing 2 or more items will get you a product offer!')
-alert()
+prompt("Are you purchasing 2 or more items?")
+alert("Purchasing 2 or more items will get you a product offer, unless you are a premium member then you don't need to buy a specific amount!")
 
 
 
