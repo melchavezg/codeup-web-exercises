@@ -73,14 +73,48 @@ person.sayHello = function() {
      * > console.log(books[0].author.lastName) // "Adams"
      */
     var books = [
-        {title:["Song of Achilles", " Looking for Alaska ", "Losing Hope", " The Librarian of Auschwitz ", " A Touch of Darkness"],
-            authorFirstName:["Madeline", " John ", " Colleen ", " Antonio ", " Scarlett "],
-            authorLastName:["Miller", " Green ", " Hoover ", " Iturbe ", " Clair "]
+        {title:"Song of Achilles",
+            author: {
+                authorFirstName: "Madeline",
+                authorLastName: "Miller"
+            }
 }
+]
+    var books = [
+        {
+            title: " Looking for Alaska ",
+            author: {
+                authorFirstName: " John ",
+                authorLastName: " Green "
+            }
+        }
     ]
-    console.log(books[1].title);
-    console.log(books[1].author.firstName);
-    console.log(books[1].author.lastName);
+    var books = [
+        {
+            title: "Losing Hope",
+            author: {
+                authorFirstName: " Colleen ",
+                authorLastName: " Hoover "
+            }
+        }
+    ]
+    var books = [
+        {title:" The Librarian of Auschwitz ",
+            author: {
+            authorFirstName:" Antonio ",
+            authorLastName:" Iturbe "
+        }
+    ]
+    var books = [
+        {
+            title: " A Touch of Darkness",
+            author: {
+                authorFirstName: " Scarlett ",
+                authorLastName: " Clair "
+            }
+        }
+    ]
+
 
     /**
      * TODO:
@@ -134,4 +168,4 @@ person.sayHello = function() {
         console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
         console.log("---")
     }
-})();
+};
