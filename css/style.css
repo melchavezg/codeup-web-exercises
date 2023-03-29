@@ -1,3 +1,16 @@
 h1 {
     color: purple;
 }
+ h1 { text-align: center }
+
+h2 {
+    color: darkmagenta;
+    text-decoration: underline; }
+
+body {
+    background-color: cornflowerblue;
+}
+
+body {
+    background-image: url("https://placeholder.pics/svg/300/FF0E7F-FF18E3")
+}
