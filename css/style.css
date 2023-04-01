@@ -1,16 +1,27 @@
 h1 {
     color: purple;
 }
- h1 { text-align: center }
+ h1 { text-align: center
+ }
 
 h2 {
     color: darkmagenta;
-    text-decoration: underline; }
-
-body {
-    background-color: cornflowerblue;
+    text-decoration: underline;
 }
 
 body {
-    background-image: url("https://placeholder.pics/svg/300/FF0E7F-FF18E3")
+    background-color: cornflowerblue;
+    background-image: url("http://www.example.com/images/bck.png");
+    font-family: Cormorant Garamond;
+}
+
+ul {
+    list-style: square;
+}
+
+table {
+    font-family: Oswald;
+}
+a:hover {
+    color: white;
 }
