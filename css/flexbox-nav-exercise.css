@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+nav {
+box-sizing: border-box;
+    display: flex;
+    align-item: center;
+    background-color: #C1C1C1;
+    padding: 5px;
+    font-family: Work Sans;
+    font-weight: bolder;
+
+}
+
+.list-one{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    width: 20%;
+}
+
+.list-two {
+    list-style-type: none;
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+}
+#logo{
+    text-align: center;
+    padding: .2em;
+    font-family: Montserrat;
+    width: 60%;
+    font-size: 2em;
+
+
+}
+
+a:hover {
+    color: white;
+}
