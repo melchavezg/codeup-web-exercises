@@ -28,7 +28,7 @@ a {
 .top-nav {
     display: inline-block;
     width: 100%;
-
+    padding: 1.5em;
     background: var(--light-bg);
 }
 .nav {
