@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Mapbox Map</title>
+  <!-- Mapbox CSS -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />    <style>
+  #map {
+    /* the width and height may be set to any size */
+    width: 100%;
+    height: 700px;
+  }
+</style>
+</head>
+<body>
+
+<h1>My First Mapbox Map!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
+<!-- Custom JS -->
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWNoYXZlejMwMCIsImEiOiJjbGd5M2swdjEwNW5mM2ZxaDQ2ejk3aXd1In0.wWVx0QNiyZuyZy34aiyJgQ';
+  var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    zoom: 10, // starting zoom
+    center: [-98.4916, 29.4252] // [lng, lat]
+
+  });
+  // var marker = new mapboxgl.Marker()
+  //         .setLngLat([-98.478, 29.4974])
+  //         .addTo(map);
+  //
+  // var restPopup = new mapboxgl.Popup()
+  //         .setHTML("<p>Ida Claire</p>")
+  // marker.setPopup(restPopup)
+  //
+  // map.doubleClickZoom.enable();
+
+
+  var restArrays = [
+    {
+      address: "5790 W Loop 1604 N, San Antonio, TX 78251",
+      popupHTML: "<p>Chili's</p>",
+    },
+    {
+      address: "410 W Loop 1604 N, San Antonio, TX 78251",
+      popupHTML: "<p>Bill Miller</p>",
+    },
+    {
+
+      address: "1001 S Alamo St, San Antonio, TX 78210",
+      popupHTML: "<p>Little Em's</p>"
+    }];
+
+  restArrays.forEach(function(restaurant) {
+    console.log(restaurant)
+    geocode(restaurant.address, mapBoxtoken).then(function(result) {
+      var popup = new mapboxgl.Popup()
+              .setHTML(restaurant.popupHTML);
+      var marker = new mapboxgl.Marker()
+              .setLngLat(results)
+              .addTo(map)
+              marker.setPopup(popup);
+      // popup.addTo(map);
+    });
+  });
+
+
+
+
+
+</script>
+</body>
+</html>

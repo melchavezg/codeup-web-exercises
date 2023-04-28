@@ -47,22 +47,53 @@
   <dd>Volunteers: More than 279,000 in 2019</dd>
 </dl>
 
+<h3>Big Bend State Park</h3>
+<ul id="big-bend">
+  <li>Largest state park in Texas</li>
+  <li>Home to over 70 miles of hiking trails</li>
+  <li>Home to a variety of wildlife</li>
+  <li>Park offers a range of camping options</li>
+</ul>
+
+<h3>Enchanted Rock State Park</h3>
+<ul id="enchanted-rock">
+  <li>Covers over 1,600 acres and includes hiking trails</li>
+  <li>Is considered a sacred site to many Native American tribes</li>
+  <li>Known for it's unique geological features</li>
+  <li>Located near the town of Fredericksburg</li>
+</ul>
+
+<h3>Guadalupe State Park</h3>
+<ul id="guadalupe-park">
+  <li>Home to the highest peak in Texas</li>
+  <li>Home to over 300 species of birds</li>
+  <li>Home to several other peaks that exceed 8,000ft</li>
+  <li>Located near the town of Carlsbad, New Mexico</li>
+</ul>
+<button>Click to Highlight</button>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
     "use strict";
+    // $(document).ready(function() {
+    //     $("dd").addClass("invisible");
+    // });
+    //
+    // // $("dd").css("visibility", "hidden");
+    //
+    // $(document).ready(function() {
+    //   $('#toggle').click(function() {
+    //     $('dd').toggleClass('invisible');
+    //   });
+    // });
+    $(document).ready(function(){
+      $('button').click(function(){
+        $('li').last().css('background-color', '#FF0');
 
-    $(document).ready(function() {
-        $("dd").addClass("invisible");
-    });
-
-    // $("dd").css("visibility", "hidden");
-
-    $(document).ready(function() {
-      $('#toggle').click(function() {
-        $('dd').toggleClass('invisible');
       });
     });
+
 
 </script>
 </body>
