@@ -58,9 +58,9 @@
      * different result everytime you refresh the page if you are using the random
      * number)
      */
-    function isTwo(nun){
-        console.log(nun)
-        return nun === 2;
+    function isTwo(number){
+        console.log(number)
+        return number === 2;
     }
     console.log(isTwo(random));
     console.log(random);

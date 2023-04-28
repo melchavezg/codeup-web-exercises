@@ -69,18 +69,16 @@
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-    function analyzeColor(color) {
-    case "red":
-        alert(color + ' is the color of roses');
-        break;
+    var colorAnalyze = prompt('what is your favorite color');
+    switch(colorAnalyze) {
     case "blue":
-        alert(color + ' is the color of the ocean');
+        alert('blue is the color of the ocean');
         break;
     case "green":
-        alert(color + ' is the color of grass');
+        alert('green is the color of grass');
         break;
-    case color:
-        alert('i do not know anything about ' + color);
+        default:
+        alert('i do not know anything about ' + colorAnalyze + '.');
         break;
 
     }
@@ -90,7 +88,11 @@
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+var favoriteColor = prompt('what is your favorite color?')
+function analyzeColor(favoriteColor) {
+    return alert (favoriteColor);
+}
+console.log(analyzeColor(favoriteColor));
 /* ########################################################################## */
 
 /**
@@ -112,7 +114,29 @@
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal(n, t){
+    switch(n){
+        case 0:
+            return t
+        case 1:
+            return t -= t * .10
+        case 2:
+            return t -= t * .25
+        case 3:
+            return t -= t * .35
+        case 4:
+            return t -= t * .50
+        case 5:
+            return t -= t * 1.00
+    }
 
+}
+console.log(calculateTotal(0, 100));
+console.log(calculateTotal(1, 100));
+console.log(calculateTotal(2,100));
+console.log(calculateTotal(3, 100));
+console.log(calculateTotal(4, 100));
+console.log(calculateTotal(5, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
